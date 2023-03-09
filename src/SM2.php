@@ -22,7 +22,7 @@ class SM2
      */
     function encrypt($value)
     {
-        return shell_exec("java -jar SM2.jar -e " . $value . " $this->publicKey $this->privateKey");
+        return shell_exec("java -jar " . dirname(__FILE__) . DIRECTORY_SEPARATOR . "SM2.jar -e " . $value . " $this->publicKey $this->privateKey");
     }
 
     /**
@@ -30,6 +30,6 @@ class SM2
      */
     function decrypt($value)
     {
-        return shell_exec("java -jar SM2.jar -d " . $value . " $this->publicKey $this->privateKey");
+        return shell_exec("java -jar " . dirname(__FILE__) . DIRECTORY_SEPARATOR . "SM2.jar -d " . $value . " $this->publicKey $this->privateKey");
     }
 }
