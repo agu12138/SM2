@@ -1,6 +1,6 @@
 <?php
 
-namespace venyuan;
+namespace venyuansm2;
 
 class SM2
 {
