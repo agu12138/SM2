@@ -10,7 +10,7 @@ class SM2
 
     var $publicKey = "";
 
-    function __construct($publicKey, $privateKey)
+    function __construct($publicKey = "", $privateKey = "")
     {
         if ($publicKey && $privateKey) {
             $this->publicKey = $publicKey;
