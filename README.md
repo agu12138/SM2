@@ -11,7 +11,7 @@ Test.php
 require __DIR__.'/vendor/autoload.php';
 
 
-$sm2=new \venyuanbsn\SM2($publicKey, $privateKey);
+$sm2=new \venyuan\SM2($publicKey, $privateKey);
 
 //加密
 $sm2->encrypt("12312312132");
