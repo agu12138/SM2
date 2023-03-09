@@ -1,0 +1,21 @@
+{
+    "name": "venyuan/sm2",
+    "type": "library",
+    "minimum-stability": "stable",
+    "description": "sm2国密算法",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "agul",
+            "email": "agul64980223@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "venyuansm2\\": "src/"
+        }
+    }
+}
