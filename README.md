@@ -1,4 +1,4 @@
-# BSN
+# SM2
 venyuan-sm2
 
 ------------------------
@@ -11,10 +11,13 @@ Test.php
 require __DIR__.'/vendor/autoload.php';
 
 
-$res=\venyuanbsn\BSN::sign("xxxxxxxxxxxxxxxxxxx");
+$sm2=new \venyuanbsn\SM2($publicKey, $privateKey);
 
+//加密
+$sm2->encrypt("12312312132");
 
-$res=\venyuanbsn\BSN::Verify("xxxxxxxxxxxxxxxxxxxxxxx","xxxxxxxxxxxxxxxxxxxxxxxxxx");
+//解密
+$sm2->decrypt("12312312132");
 
 ```
 
